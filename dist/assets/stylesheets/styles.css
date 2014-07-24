@@ -143,50 +143,59 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 body {
-  color: #29221f; }
-  body h1 {
-    color: #29221f; }
-  body .colors div {
-    margin-left: 10px;
-    box-shadow: 2px 2px 5px 1px gray; }
-  body .colors .black {
-    height: 120px;
-    width: 120px;
-    position: relative;
-    float: left;
-    background-color: #29221f;
-    color: #fcf7c5; }
-    body .colors .black h3 {
-      text-align: center; }
-  body .colors .red {
-    height: 120px;
-    width: 120px;
-    position: relative;
-    float: left;
-    background-color: #fc354c; }
-    body .colors .red h3 {
-      text-align: center; }
-  body .colors .blue {
-    height: 120px;
-    width: 120px;
-    position: relative;
-    float: left;
-    background-color: #13747d; }
-    body .colors .blue h3 {
-      text-align: center; }
-  body .colors .lightBlue {
-    height: 120px;
-    width: 120px;
-    position: relative;
-    float: left;
-    background-color: #0abfbc; }
-    body .colors .lightBlue h3 {
-      text-align: center; }
-  body .colors .cream {
-    height: 120px;
-    width: 120px;
-    position: relative;
-    float: left;
-    background-color: #fcf7c5; }
-    body .colors .cream h3 {
-      text-align: center; }
+  color: #29221f;
+  width: 100%; }
+  body .wrapper {
+    background-color: CadetBlue;
+    max-width: 800px;
+    width: 100%;
+    padding: 50px;
+    margin: 0 auto; }
+    body .wrapper h1 {
+      color: #29221f; }
+    body .wrapper .colors {
+      padding-bottom: 50px; }
+      body .wrapper .colors div {
+        margin-left: 10px;
+        box-shadow: 2px 2px 5px 1px gray; }
+      body .wrapper .colors .black {
+        height: 120px;
+        width: 120px;
+        position: relative;
+        float: left;
+        background-color: #29221f;
+        color: #fcf7c5; }
+        body .wrapper .colors .black h3 {
+          text-align: center; }
+      body .wrapper .colors .red {
+        height: 120px;
+        width: 120px;
+        position: relative;
+        float: left;
+        background-color: #fc354c; }
+        body .wrapper .colors .red h3 {
+          text-align: center; }
+      body .wrapper .colors .blue {
+        height: 120px;
+        width: 120px;
+        position: relative;
+        float: left;
+        background-color: #13747d; }
+        body .wrapper .colors .blue h3 {
+          text-align: center; }
+      body .wrapper .colors .lightBlue {
+        height: 120px;
+        width: 120px;
+        position: relative;
+        float: left;
+        background-color: #0abfbc; }
+        body .wrapper .colors .lightBlue h3 {
+          text-align: center; }
+      body .wrapper .colors .cream {
+        height: 120px;
+        width: 120px;
+        position: relative;
+        float: left;
+        background-color: #fcf7c5; }
+        body .wrapper .colors .cream h3 {
+          text-align: center; }

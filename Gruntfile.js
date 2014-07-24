@@ -56,7 +56,13 @@ module.exports = function(grunt) {
          ext: '.html'
       }]
      }
-   }
+   },
+   smushit: {
+    mygroup: {
+      src: ['tests/img/**/*.png','tests/img/**/*.jpg'],
+      dest: 'tests/img/min'
+    }
+  }
 
  });
 
@@ -65,6 +71,7 @@ module.exports = function(grunt) {
  grunt.loadNpmTasks('grunt-autoprefixer');
  grunt.loadNpmTasks('grunt-contrib-connect');
  grunt.loadNpmTasks('grunt-contrib-jade');
+ grunt.loadNpmTasks('grunt-smushit');
 
  // Default task(s).
  grunt.registerTask('default', ['connect', 'sass', 'jade', 'watch']);

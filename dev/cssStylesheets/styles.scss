@@ -38,14 +38,23 @@ $DarkBlue: #13747D;
 $LightBlue: #0ABFBC;
 $Cream: #FCF7C5;
 
-body{
+body {
   color:$TextBlack;
+  width:100%;
+
+.wrapper {
+  background-color: CadetBlue;
+  max-width: 800px;
+  width:100%;
+  padding:50px;
+  margin:0 auto;
 
 h1 {
 	color:$TextBlack;
 }
 
 .colors {
+  padding-bottom: 50px;
 
   div {
   margin-left: 10px;
@@ -96,6 +105,7 @@ h1 {
       text-align: center;
     }
   }
+ }
 }
 
 }
