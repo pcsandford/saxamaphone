@@ -41,6 +41,7 @@ $Cream: #FCF7C5;
 body {
   color:$TextBlack;
   width:100%;
+  
 
 .wrapper {
   background-color: CadetBlue;
@@ -56,9 +57,11 @@ h1 {
 .colors {
   padding-bottom: 50px;
 
+
   div {
   margin-left: 10px;
   box-shadow: 2px 2px 5px 1px gray;
+  padding-bottom: 70px;
  }
   .black {
     @include colorBox;
@@ -106,6 +109,11 @@ h1 {
     }
   }
  }
+
+  .list {
+    clear:both;
+    padding-top: 50px;
+  }
 }
 
 }

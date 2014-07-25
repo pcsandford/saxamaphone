@@ -74,5 +74,5 @@ module.exports = function(grunt) {
  grunt.loadNpmTasks('grunt-smushit');
 
  // Default task(s).
- grunt.registerTask('default', ['connect', 'sass', 'jade', 'watch']);
+ grunt.registerTask('default', ['connect', 'smushit', 'sass', 'jade', 'watch']);
 };

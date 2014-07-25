@@ -92,7 +92,9 @@ button[disabled], input[disabled] {
   cursor: default; }
 
 input[type=checkbox], input[type=radio] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0; }
 
 input[type=search] {
@@ -157,7 +159,9 @@ body {
       padding-bottom: 50px; }
       body .wrapper .colors div {
         margin-left: 10px;
-        box-shadow: 2px 2px 5px 1px gray; }
+        -webkit-box-shadow: 2px 2px 5px 1px gray;
+                box-shadow: 2px 2px 5px 1px gray;
+        padding-bottom: 70px; }
       body .wrapper .colors .black {
         height: 120px;
         width: 120px;
@@ -199,3 +203,6 @@ body {
         background-color: #fcf7c5; }
         body .wrapper .colors .cream h3 {
           text-align: center; }
+    body .wrapper .list {
+      clear: both;
+      padding-top: 50px; }

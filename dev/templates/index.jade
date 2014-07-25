@@ -1,6 +1,7 @@
 include includes/_header.jade
 body
 	div(class="wrapper")
+		h1 A starter workspace inspired by 
 		section(class="typography")
 			h1(class="headerText") Typography 
 			h1 h1
@@ -9,10 +10,11 @@ body
 			h4 h4
 			h5 h5
 			p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vero quos culpa ipsa tempore deserunt facere, provident eos suscipit perspiciatis molestias illum inventore illo alias sapiente, assumenda possimus non hic!
-			a(href="http://cameroncodes.com") this is a link
+			a(href="http://google.com") this is a link
 			
 		section(class="colors")
 			h1(class="headerText") Colors
+			h3 Colors based on those found in 
 			div(class="black")
 				h3 $TextBlack
 			div(class="red")
@@ -23,6 +25,22 @@ body
 				h3 $LightBlue
 			div(class="cream")
 				h3 $Cream
+		
+		section(class="list")
+			h1(class="headerText") Lists
+			ol
+				li item 1
+				li item 2
+				li item 3
 
-
+			ul
+				li item 1
+				li item 2
+				li item 3
+		
+		section(class="form")
+			h1(class="headerText") Forms
+			div(class="formElement")
+				label(for="text") Text Input
+				input(type="text", id="text") 
 		
