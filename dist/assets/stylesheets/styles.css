@@ -92,9 +92,7 @@ button[disabled], input[disabled] {
   cursor: default; }
 
 input[type=checkbox], input[type=radio] {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0; }
 
 input[type=search] {
@@ -213,8 +211,7 @@ body {
           color: #29221f;
           text-align: left;
           padding-top: 3px;
-          -webkit-transition: all 0.6s;
-                  transition: all 0.6s; }
+          transition: all 0.6s; }
           body .wrapper .navMenu .hiddenMenu a:hover {
             color: #c6b9b4; }
     body .wrapper .typography {
@@ -233,8 +230,7 @@ body {
         color: #40b8ca;
         font-weight: 400px;
         cursor: pointer;
-        -webkit-transition: all 0.6s;
-                transition: all 0.6s; }
+        transition: all 0.6s; }
         body .wrapper .typography a:hover {
           color: #027081; }
       body .wrapper .typography p {
@@ -258,8 +254,7 @@ body {
         color: #40b8ca;
         font-weight: 400px;
         cursor: pointer;
-        -webkit-transition: all 0.6s;
-                transition: all 0.6s; }
+        transition: all 0.6s; }
         body .wrapper .lists ol li:nth-child(5) a:hover {
           color: #027081; }
     body .wrapper .lists ul {
@@ -272,8 +267,7 @@ body {
         color: #40b8ca;
         font-weight: 400px;
         cursor: pointer;
-        -webkit-transition: all 0.6s;
-                transition: all 0.6s; }
+        transition: all 0.6s; }
         body .wrapper .lists ul li:nth-child(5) a:hover {
           color: #027081; }
     body .wrapper .lists p {
@@ -302,8 +296,7 @@ body {
         width: 100%; }
         body .wrapper .colors .colorHolder div {
           margin-left: 2%;
-          -webkit-box-shadow: 1px 1px 5px #29221f;
-                  box-shadow: 1px 1px 5px #29221f; }
+          box-shadow: 1px 1px 5px #29221f; }
         body .wrapper .colors .colorHolder .black {
           height: 110px;
           width: 110px;
@@ -311,15 +304,13 @@ body {
           float: left;
           background-color: #29221f;
           color: white;
-          -webkit-transition: all 0.6s;
-                  transition: all 0.6s; }
+          transition: all 0.6s; }
           body .wrapper .colors .colorHolder .black:hover > h3 {
             opacity: 0.6; }
           body .wrapper .colors .colorHolder .black h3 {
             text-align: center;
             opacity: 0;
-            -webkit-transition: all 0.6s;
-                    transition: all 0.6s; }
+            transition: all 0.6s; }
         body .wrapper .colors .colorHolder .darkBlue {
           height: 110px;
           width: 110px;
@@ -331,8 +322,7 @@ body {
           body .wrapper .colors .colorHolder .darkBlue h3 {
             text-align: center;
             opacity: 0;
-            -webkit-transition: all 0.6s;
-                    transition: all 0.6s; }
+            transition: all 0.6s; }
         body .wrapper .colors .colorHolder .lightBlue {
           height: 110px;
           width: 110px;
@@ -344,8 +334,7 @@ body {
           body .wrapper .colors .colorHolder .lightBlue h3 {
             text-align: center;
             opacity: 0;
-            -webkit-transition: all 0.6s;
-                    transition: all 0.6s; }
+            transition: all 0.6s; }
         body .wrapper .colors .colorHolder .Blue {
           height: 110px;
           width: 110px;
@@ -357,8 +346,7 @@ body {
           body .wrapper .colors .colorHolder .Blue h3 {
             text-align: center;
             opacity: 0;
-            -webkit-transition: all 0.6s;
-                    transition: all 0.6s; }
+            transition: all 0.6s; }
         body .wrapper .colors .colorHolder .headText {
           height: 110px;
           width: 110px;
@@ -370,8 +358,7 @@ body {
           body .wrapper .colors .colorHolder .headText h3 {
             text-align: center;
             opacity: 0;
-            -webkit-transition: all 0.6s;
-                    transition: all 0.6s; }
+            transition: all 0.6s; }
         body .wrapper .colors .colorHolder .white {
           height: 110px;
           width: 110px;
@@ -383,8 +370,7 @@ body {
           body .wrapper .colors .colorHolder .white h3 {
             text-align: center;
             opacity: 0;
-            -webkit-transition: all 0.6s;
-                    transition: all 0.6s; }
+            transition: all 0.6s; }
     body .wrapper .form {
       padding: 3px;
       margin-left: 5%; }
@@ -430,8 +416,7 @@ body {
         body .wrapper .form .postcode:focus,
         body .wrapper .form .email:focus {
           outline: none;
-          -webkit-box-shadow: 0 0 2px 3px #03a7c0;
-                  box-shadow: 0 0 2px 3px #03a7c0; }
+          box-shadow: 0 0 2px 3px #03a7c0; }
       body .wrapper .form .firstName,
       body .wrapper .form .middleInitial,
       body .wrapper .form .lastName {
@@ -450,8 +435,7 @@ body {
         margin-bottom: 10px; }
         body .wrapper .form .styledSelect select:focus {
           outline: none;
-          -webkit-box-shadow: 0 0 2px 3px #03a7c0;
-                  box-shadow: 0 0 2px 3px #03a7c0; }
+          box-shadow: 0 0 2px 3px #03a7c0; }
       body .wrapper .form .submit {
         background-color: #40b8ca;
         color: white;
