@@ -24,96 +24,370 @@
 //mixin
 
 @mixin colorBox {
-  height:120px;
-  width:120px;
+  height:110px;
+  width:110px;
   position: relative;
   float:left;
 }
 
-//Vars
+@mixin headlineText {
+  margin:0 auto;
+  text-align: center;
+  color: $HeaderText;
+  width:300px;
+  border-bottom: 2px solid $DarkBlue;
+  margin-top:80px;
+  margin-bottom:50px;
 
-$AccentRed: #FC354C;
+}
+
+@mixin linkText {
+  text-decoration: none;
+  color: $LightBlue;
+  font-weight: 400px;
+  cursor: pointer;
+}
+
+//Vars
 $TextBlack: #29221F;
-$DarkBlue: #13747D;
-$LightBlue: #0ABFBC;
-$Cream: #FCF7C5;
+$HeaderText: #143B40;
+$DarkBlue: #027081;
+$Blue: #03A7C0;
+$LightBlue: #40B8CA;
+$Turquoise: #027B8D;
 
 body {
+  font-family: 'Lato', sans-serif, 'Vollkorn', Georgia, Arial, Helvetica, sans-serif;
   color:$TextBlack;
   width:100%;
-  
+  background-color: $TextBlack;
+
+
+
 
 .wrapper {
-  background-color: CadetBlue;
-  max-width: 800px;
+  background-color: white;
+  max-width: 900px;
   width:100%;
-  padding:50px;
   margin:0 auto;
 
-h1 {
-	color:$TextBlack;
-}
+  .titleBanner {
+    float:left;
+    max-width: 700px;
+    width:75%;
+    margin-right: 10%;
+    margin-bottom: 5%;
 
-.colors {
-  padding-bottom: 50px;
+    h1 {
+      max-width: 600px;
+      margin-right: 0px;
+      line-spacing: 10px;
+      padding-bottom: 10px;
+      padding-left: 5%;
+      color:$HeaderText;
+      border-bottom: 3px solid $DarkBlue;
+    }
+  }  
+
+ .navMenu {
+  right:0;
+  top:0;
+  position: fixed;
+  z-index: 2;
+
+  .menuButton {
+    float:right;
+    max-width: 100px;
+    width:25%;
+    margin-right: 40%;
+    background-color: white;
+   
+       input[type="checkbox"]{
+        display:none;
+      }
+
+      h4 {
+        float:right;
+        padding-left: 10px;
+        padding-right: 60px;
+        margin-top: -20px;
+        margin-right:35px;
+      }
+
+      img {
+      float:right;
+      width:20px;
+      height:20px;
+      margin-right: 10px;
+      margin-top: 10px;
+    }
+
+    img[for="toggle"]{
+        cursor:pointer;
+      }
+     
+  input[type="checkbox"]:checked ~ .hiddenMenu {
+    color:red;
+  }
+      
+  }
+
+  .hiddenMenu {
+    list-style: none;
+    text-indent: none;
+    max-width: 200px;
+    width:100%;
+    float:right;
+    margin-top: -10px;
+    margin-right: 30px;
+    padding-left: 0;
+    
+
+    li {
+      border-bottom: 2px solid $TextBlack;
+      padding:5px;
+      
+    }
+
+    a {
+      text-decoration: none;
+      color:$TextBlack;
+      text-align: left;
+    }
+  }
+
+  
+  }
+
+  .typography {
+    clear: both;
+    margin-left: 5%;
+
+    .headerText {
+    @include headlineText;
+    }
+
+    a {
+      @include linkText;
+    }
+
+    p {
+      font-family: 'Vollkorn';
+      font-weight: 500;
+    }
+  }
+
+  .lists {
+   
+
+    .headerText {
+      @include headlineText;
+    }
+
+    ol {
+      float:left;
+      margin-left: 10%;
 
 
-  div {
-  margin-left: 10px;
-  box-shadow: 2px 2px 5px 1px gray;
-  padding-bottom: 70px;
+      li {
+        padding:5px;
+      }
+
+      li:nth-child(5) a{
+        @include linkText;
+      }
+    }
+
+    ul {
+      float:left;
+      margin-left: 10%;
+
+      li{
+        padding:5px;
+      }
+
+      li:nth-child(5) a{
+        @include linkText;
+      }
+    }
+
+    p {
+      font-family: 'Vollkorn';
+      float:left;
+      width:40%;
+      margin-left: 10%;
+      margin-top: 2%;
+    }
+  }
+
+
+  .colors {
+    clear: both;
+
+
+    .headerText {
+      text-align: center;
+      @include headlineText;
+      padding-top: 10%;
+    }
+
+    h3 {
+      margin-left: 5%;
+    }
+  
+    .colorHolder {
+      margin: 0 auto;
+      max-width: 800px;
+      width:100%;
+
+      div {
+        margin-left: 2%;
+        box-shadow: 1px 1px 5px $TextBlack;
+      }
+  
+      .black {
+        @include colorBox;
+        background-color:$TextBlack;
+        color:white;
+
+        h3 {
+          text-align: center;
+        }
+      }
+
+      .darkBlue {
+        @include colorBox;
+        background-color: $DarkBlue;
+
+        h3 {
+          text-align: center;
+        }
+      }
+
+      .lightBlue {
+        @include colorBox;
+        background-color: $LightBlue;
+
+        h3 {
+          text-align: center;
+        }
+      }
+
+      .Blue {
+        @include colorBox;
+        background-color: $Blue;
+
+        h3 {
+          text-align: center;
+        }
+      }
+
+      .headText {
+        @include colorBox;
+        background-color: $HeaderText;
+
+        h3 {
+          text-align: center;
+        }
+      }
+
+      .white {
+        @include colorBox;
+        background-color: white;
+      }
+
+        h3 {
+          text-align: center;
+        }
+    }
  }
-  .black {
-    @include colorBox;
-    background-color:$TextBlack;
-    color:$Cream;
 
-    h3 {
-      text-align: center;
-    }
-  }
+ 
 
-  .red {
-    @include colorBox;
-    background-color: $AccentRed;
+.form {
 
-    h3 {
-      text-align: center;
-    }
-  }
-
-  .blue {
-    @include colorBox;
-    background-color: $DarkBlue;
-
-    h3 {
-      text-align: center;
-    }
-  }
-
-  .lightBlue {
-    @include colorBox;
-    background-color: $LightBlue;
-
-    h3 {
-      text-align: center;
-    }
-  }
-
-  .cream {
-    @include colorBox;
-    background-color: $Cream;
-
-    h3 {
-      text-align: center;
-    }
-  }
- }
-
-  .list {
+    padding:3px;
+    margin-left: 5%;
+  
+  .headerText {
     clear:both;
-    padding-top: 50px;
+    @include headlineText;
+    margin-bottom: 50px;
+    padding-top: 10%;
   }
-}
 
-}
+  .firstName,
+  .middleInitial,
+  .lastName,
+  .firstLine,
+  .secondLine,
+  .city,
+  .postcode,
+  .email {
+    border:none;
+    border-radius:3px;
+    padding:2px;
+    margin:3px;
+    background-color: $DarkBlue;
+    
+   ::-webkit-input-placeholder { color:#f00; }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 2px 3px $Blue;
+    }
+    }
+  
+  .styledSelect select {
+    background-color: $LightBlue;
+    padding: 2px;
+    border: none;
+    border-radius: 2px;
+    margin-left: 3px;
+    
+     &:focus {
+      outline: none;
+      box-shadow: 0 0 2px 3px $Blue;
+    }
+    }
+  .submit {
+    background-color: $LightBlue;
+    color:white;
+    padding:2px;
+    border: none;
+    border-radius: 2px;
+    width:100px;
+    margin-left: 3px;
+
+  }
+
+  .radioButtons {
+    background-color: lighten($LightBlue,40%);
+    margin-top:10px;
+    width:44%;
+
+    input {
+    padding-right: 5px;
+    }
+  }
+
+  .checkBoxes {
+    background-color: lighten($LightBlue,40%);
+    margin-top:10px;
+    width:44%;
+    margin-bottom: 100px;
+  }
+  }//form closing
+
+
+
+// .footer {
+
+//     .headerText {
+//       text-align: center;
+//     }
+//   }
+
+}//wrapper close
+
+}//body close

@@ -4,57 +4,127 @@
   <meta charset="UTF-8"/>
   <title>Week 4 Project</title>
   <link rel="stylesheet" href="../assets/stylesheets/styles.css"/>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,900"/>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Vollkorn:400,700"/>
 </head>
 <body>
   <div class="wrapper">
-    <h1>A starter workspace inspired by </h1>
-    <section class="typography">
-      <h1 class="headerText">Typography </h1>
-      <h1>h1</h1>
-      <h2>h2</h2>
-      <h3>h3</h3>
-      <h4>h4</h4>
-      <h5>h5</h5>
+    <div class="titleBanner">
+      <h1>Starter Workspace with Analgous Colour Scheme </h1>
+    </div>
+    <div class="navMenu">
+      <div class="menuButton">
+        <input type="checkbox" id="toggle"/><img src="assets/images/menu10.svg" alt="menu button" for="toggle"/>
+        <h4>MENU</h4>
+      </div>
+      <ul class="hiddenMenu">
+        <li><a href="#history" class="pageLink">Typography</a></li>
+        <li><a href="#lists" class="pageLink">Lists</a></li>
+        <li><a href="#colors" class="pageLink">Colors</a></li>
+        <li><a href="#forms" class="pageLink">Forms</a></li>
+      </ul>
+    </div>
+    <div class="typography">
+      <h1 id="typography" class="headerText">Typography </h1>
+      <p>This guide uses 'Lato', a san-serif font, for headlines and links, and 'Vollkron', a serif font, for text. Both are available from google fonts.</p>
+      <h1>Header Level 1</h1>
+      <h2>Header Level 2</h2>
+      <h3>Header Level 3</h3>
+      <h4>Header Level 4</h4>
+      <h5>Header Level 5</h5>
       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vero quos culpa ipsa tempore deserunt facere, provident eos suscipit perspiciatis molestias illum inventore illo alias sapiente, assumenda possimus non hic!</p><a href="http://google.com">this is a link</a>
-    </section>
-    <section class="colors">
-      <h1 class="headerText">Colors</h1>
-      <h3>Colors based on those found in </h3>
-      <div class="black">
-        <h3>$TextBlack</h3>
-      </div>
-      <div class="red">
-        <h3>$AccentRed</h3>
-      </div>
-      <div class="blue">
-        <h3>$DarkBlue</h3>
-      </div>
-      <div class="lightBlue">
-        <h3>$LightBlue</h3>
-      </div>
-      <div class="cream">
-        <h3>$Cream</h3>
-      </div>
-    </section>
-    <section class="list">
-      <h1 class="headerText">Lists</h1>
+    </div>
+    <div class="lists">
+      <h1 id="lists" class="headerText">Lists</h1>
       <ol>
-        <li>item 1</li>
-        <li>item 2</li>
-        <li>item 3</li>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li><a href="google.com" class="examplelink">Item 5</a></li>
       </ol>
       <ul>
-        <li>item 1</li>
-        <li>item 2</li>
-        <li>item 3</li>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li><a href="google.com" class="examplelink">Item 5</a></li>
       </ul>
-    </section>
-    <section class="form">
-      <h1 class="headerText">Forms</h1>
-      <div class="formElement">
-        <label for="text">Text Input</label>
-        <input type="text" id="text"/>
+      <p>Both ordered and unordered lists can be customizable with colours and styles of text. In addition, the unordered list icons are fully customizable. See item no. 5 on both lists for an example of a custom link within a list.</p>
+    </div>
+    <div class="colors">
+      <h1 id="colors" class="headerText">Colors</h1>
+      <h3>Analogous colours based on #13747D</h3>
+      <div class="colorHolder">
+        <div class="black">
+          <h3>#29221F</h3>
+        </div>
+        <div class="darkBlue">
+          <h3>#FC354C</h3>
+        </div>
+        <div class="lightBlue">
+          <h3>#13747D</h3>
+        </div>
+        <div class="Blue">
+          <h3>#0ABFBC</h3>
+        </div>
+        <div class="headText">
+          <h3>#FCF7C5</h3>
+        </div>
+        <div class="white">
+          <h3>#FFFFFF</h3>
+        </div>
       </div>
-    </section>
+    </div>
+    <div class="form">
+      <h1 id="forms" class="headerText">Forms</h1>
+      <div class="formElement">
+        <div class="name">
+          <input type="text" placeholder="First Name" class="firstName"/>
+          <input type="text" placeholder="I" class="middleInitial"/>
+          <input type="text" placeholder="Last Name" class="lastName"/>
+        </div>
+        <div class="address">
+          <input type="text" placeholder="Address Line 1" class="firstLine"/>
+          <input type="text" placeholder="Address Line 2" class="secondLine"/>
+          <input type="text" placeholder="City" class="city"/>
+          <input type="text" placeholder="Postal Code" class="postcode"/>
+        </div>
+        <div class="styledSelect">
+          <select name="province">
+            <option value="Yukon">YT</option>
+            <option value="Saskatchewan">SK</option>
+            <option value="Quebec">QC</option>
+            <option value="Prince Edward Island">PEI</option>
+            <option value="Ontario">ON</option>
+            <option value="Nunavut">NU</option>
+            <option value="Northwest Territories">NT</option>
+            <option value="Nova Scotia">NS</option>
+            <option value="Newfoundland and Labrador">NL</option>
+            <option value="New Brunswick">NB</option>
+            <option value="Manitoba">MB</option>
+            <option value="British Columbia">BC</option>
+            <option value="Alberta">AB</option>
+            <option value="Province" selected="selected">--</option>
+          </select>
+        </div>
+        <div class="emailHolder">
+          <input type="email" placeholder="Email Address" class="email"/>
+        </div>
+        <div class="submitButton">
+          <input type="submit" value="Submit" class="submit"/>
+        </div>
+        <div class="radioButtons">Radio Buttons
+          <input type="radio" checked="true"/>Option A
+          <input type="radio"/>Option B
+          <input type="radio"/>Option C
+        </div>
+        <div class="checkBoxes">Checkboxes
+          <input type="checkBox"/>Option A
+          <input type="checkBox"/>Option B
+          <input type="checkBox"/>Option C
+        </div>
+      </div>
+    </div>
   </div>
 </body>

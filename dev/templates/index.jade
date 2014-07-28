@@ -1,46 +1,124 @@
 include includes/_header.jade
 body
-	div(class="wrapper")
-		h1 A starter workspace inspired by 
-		section(class="typography")
-			h1(class="headerText") Typography 
-			h1 h1
-			h2 h2
-			h3 h3
-			h4 h4
-			h5 h5
+	.wrapper
+		.titleBanner
+			h1 Starter Workspace with Analgous Colour Scheme 
+		.navMenu
+			.menuButton 
+				input(type="checkbox", id="toggle")
+				img(src="assets/images/menu10.svg",alt="menu button", for="toggle") 
+				h4 MENU
+			ul(class="hiddenMenu")
+				li
+					a(class="pageLink", href="#history") Typography
+				li 
+					a(class="pageLink", href="#lists") Lists
+				li 
+					a(class="pageLink", href="#colors") Colors
+				li 
+					a(class="pageLink", href="#forms") Forms
+				//- li 
+				//- 	a(class="pageLink", href="#footer") Footer
+		.typography
+			h1(class="headerText" id="typography") Typography 
+			p This guide uses 'Lato', a san-serif font, for headlines and links, and 'Vollkron', a serif font, for text. Both are available from google fonts.
+			h1 Header Level 1
+			h2 Header Level 2
+			h3 Header Level 3
+			h4 Header Level 4
+			h5 Header Level 5
 			p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vero quos culpa ipsa tempore deserunt facere, provident eos suscipit perspiciatis molestias illum inventore illo alias sapiente, assumenda possimus non hic!
 			a(href="http://google.com") this is a link
 			
-		section(class="colors")
-			h1(class="headerText") Colors
-			h3 Colors based on those found in 
-			div(class="black")
-				h3 $TextBlack
-			div(class="red")
-				h3 $AccentRed
-			div(class="blue")
-				h3 $DarkBlue
-			div(class="lightBlue")
-				h3 $LightBlue
-			div(class="cream")
-				h3 $Cream
 		
-		section(class="list")
-			h1(class="headerText") Lists
+		.lists
+			h1(class="headerText" id="lists") Lists
 			ol
-				li item 1
-				li item 2
-				li item 3
+				li Item 1
+				li Item 2
+				li Item 3
+				li Item 4
+				li 
+					a(class='examplelink', href='google.com') Item 5
 
 			ul
-				li item 1
-				li item 2
-				li item 3
+				li Item 1
+				li Item 2
+				li Item 3
+				li Item 4
+				li 
+					a(class='examplelink', href='google.com') Item 5
+
+			p Both ordered and unordered lists can be customizable with colours and styles of text. In addition, the unordered list icons are fully customizable. See item no. 5 on both lists for an example of a custom link within a list.
 		
-		section(class="form")
-			h1(class="headerText") Forms
+		
+		.colors
+			h1(class="headerText" id="colors") Colors
+			h3 Analogous colours based on #13747D
+			.colorHolder 
+				div(class="black")
+					h3 #29221F
+				div(class="darkBlue")
+					h3 #FC354C
+				div(class="lightBlue")
+					h3 #13747D
+				div(class="Blue")
+					h3 #0ABFBC
+				div(class="headText")
+					h3 #FCF7C5
+				div(class="white")
+					h3 #FFFFFF
+
+		
+		.form
+			h1(class="headerText" id="forms") Forms
 			div(class="formElement")
-				label(for="text") Text Input
-				input(type="text", id="text") 
-		
+				div(class="name")
+					input(type="text", class="firstName", placeholder="First Name")
+					input(type="text", class="middleInitial", placeholder="I")
+					input(type="text", class="lastName", placeholder="Last Name")
+				div(class="address")
+					input(type="text", class="firstLine", placeholder="Address Line 1")
+					input(type="text", class="secondLine", placeholder="Address Line 2")
+					input(type="text", class="city", placeholder="City")
+					input(type="text", class="postcode", placeholder="Postal Code")
+				div(class="styledSelect")
+					select(name="province")
+						option(value="Yukon") YT
+						option(value="Saskatchewan") SK
+						option(value="Quebec") QC
+						option(value="Prince Edward Island") PEI
+						option(value="Ontario") ON
+						option(value="Nunavut") NU
+						option(value="Northwest Territories") NT
+						option(value="Nova Scotia") NS
+						option(value="Newfoundland and Labrador") NL
+						option(value="New Brunswick") NB
+						option(value="Manitoba") MB
+						option(value="British Columbia") BC
+						option(value="Alberta") AB
+						option(value="Province" selected ) --
+				div(class="emailHolder")
+					input(type="email", class="email", placeholder="Email Address")
+				div(class="submitButton")
+					input(type="submit", class="submit" value="Submit")
+				div(class="radioButtons") Radio Buttons
+					input(type="radio" checked="true") 
+					| Option A
+					input(type="radio") 
+					| Option B
+					input(type="radio") 
+					| Option C
+				div(class="checkBoxes") Checkboxes
+					input(type="checkBox") 
+					| Option A
+					input(type="checkBox") 
+					| Option B
+					input(type="checkBox") 
+					| Option C
+		//- .footer
+		//- 	h1(class="headerText") Footer
+		//- 	ul
+		//- 		li twitter
+		//- 		li instagram
+		//- 		li facebook
